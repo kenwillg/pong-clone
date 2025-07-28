@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfnhnw7ghixey"]
+
+[ext_resource type="Script" uid="uid://ceyg4uiss11d2" path="res://src/scoreBar/score_bar.gd" id="1_3e6td"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3e6td"]
+size = Vector2(16, 656)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_3e6td")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3e6td")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
