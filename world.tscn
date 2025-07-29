@@ -37,7 +37,12 @@ rotation = -1.57079
 shape = SubResource("RectangleShape2D_fj7yv")
 
 [node name="enemyPaddle" parent="." instance=ExtResource("3_tlwt5")]
-position = Vector2(1120, 200)
+position = Vector2(1080, 200)
 
-[node name="scoreBar" parent="." instance=ExtResource("4_aqk2v")]
+[node name="enemyBar" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(1160, 328)
+scorer_name = "player"
+
+[node name="playerBar" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(-8, 328)
+scorer_name = "enemy"
